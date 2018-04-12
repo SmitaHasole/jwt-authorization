@@ -1,0 +1,40 @@
+<div class="table-parent">
+  <table class="striped">
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Order Date</th>
+        <th>Sample Received Date</th>
+        <th>Physician</th>
+        <th>Hospital Name</th>
+        <th>Test Name</th>
+        <th>Status</th>
+        <th>Pending Amount</th>
+        <th>Payment/Report Download</th>
+
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let data of patientData">
+        <td>{{data.orderID}}</td>
+        <td>{{data.orderDate}}</td>
+        <td>{{data.sampleReceivedDate}}</td>
+        <td>{{data.physician}}</td>
+        <td>{{data.hospitalName}}</td>
+        <td>{{data.testName}}</td>
+        <td>{{data.status}}</td>
+        <td>{{data.pendingAmount}}</td>
+        <td>
+          <a *ngIf="!data.paymentDone">
+            <img class="icon-style" src="../../assets/images/credit-card.svg"/>
+          </a>
+          <a *ngIf="data.reportReady">
+            <img class="credit-icon" src="../../assets/images/download.svg"/>
+          </a>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

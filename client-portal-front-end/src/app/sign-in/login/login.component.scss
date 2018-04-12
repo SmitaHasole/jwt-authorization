@@ -1,0 +1,211 @@
+@import '../../colors.scss';
+* {
+  font-family: Lato;
+}
+
+.row {
+  margin-bottom: 0 !important;
+}
+
+.wrapper {
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: #1B73C7;
+  background-image: url("/../../../assets/images/background-login.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+
+}
+
+.igp-logo{
+  width: 10%;
+  height: auto;
+  margin-left: 8%;
+  margin-top: 2%;
+}
+
+.login-form {
+  position: relative;
+  width: 25%;
+  margin-top:5%; 
+    margin-left: auto;
+    margin-right: auto;
+   height: auto;
+    background-color: white;
+    border-radius: 1px;
+    text-align: center;
+    justify-content: center;
+  transition: 0s;
+  font-family: Lato;
+    box-shadow: 1px 2px 3px rgba(117, 117, 117, 0.4);
+}
+
+/* // .login-form {
+//   margin: 0px auto;
+//   width: 400px;
+//   min-width: 30%; 
+//   background-color: white;
+//   border-radius: 1px;
+//   text-align: center;
+//   font-family: Lato;
+//   box-shadow: 1px 2px 3px rgba(117, 117, 117, 0.4);
+// } */
+
+.form-logo {
+  width: 50%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.form-heading {
+	color: #2D3137;
+  font-size: 18px;	
+  font-weight: bold;	
+  margin-top: 20px;
+  line-height: 22px;
+}
+
+.form-heading-light {
+  color: #929497;
+  font-size: 14px;	
+  line-height: 17px;
+}
+
+.form-wrapper {
+  padding: 2% 20%; 
+}
+.error-msg{
+  color: red;
+}
+
+.signin-button{
+  margin: 12px auto;
+  margin-bottom: 30px;
+  border: none;
+  background-color: $green-color;
+  padding: 20px 65px;
+  color: white;
+  font-size: 14px;	line-height: 5px;
+}
+
+.dont-have-account{
+
+  font-size: 14px;	
+  line-height: 21px;	
+  text-align: center;
+}
+
+
+.input-field.inline input, .input-field.inline .select-dropdown {
+  margin-bottom: -0.3rem;
+}
+.input-field.inline {
+  display: block; 
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.form-footer {
+  padding: 30px;
+}
+
+.input-field {
+  position: relative;
+  margin-top: 0.2rem;
+  margin-bottom: 0.3rem; 
+}
+.user-input {
+  position: relative;
+
+  input[type=email]  {
+    padding-left: 21px !important;
+    width: 90%;
+    margin: 0;
+    
+  }
+
+  input[type=password]  {
+    padding-left: 21px !important;
+    width: 90%;
+    margin-bottom:1%;
+    
+  }
+
+  .fa-user:before{
+    font-family: 'FontAwesome';
+    color: #1665AD;
+    font-size: 14px;	line-height: 14px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 15px 0;
+  }
+
+  .fa-lock:before{
+    font-family: 'FontAwesome';
+    color: #1665AD;
+    font-size: 14px;	line-height: 14px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 15px 0;
+  }
+}
+
+@media(max-width:1366px){
+  .login-form {
+       width: 30%;
+  }
+}
+@media(max-width:768px){
+  .login-form {
+       width: 80%;
+  }
+  .user-input {
+    margin-bottom: 3%;
+  }
+  .wrapper {
+ 
+    padding: 13% 0 28%;
+  }
+}
+
+@media(max-width:375px){
+  .wrapper {
+    padding: 13% 0 16%;
+  }
+}
+
+.outer-container {
+  height: 100vh;
+  margin-bottom: -30px;
+}
+
+.push{
+  height: 30px;
+}
+.footers {
+  bottom: 0px;
+ 
+  text-align: center;
+  font-size: 14px;	
+ 
+  span {
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.btn{
+  background-color: $green-color;
+}
+.btn:visited{
+  background-color: #64dd17;
+}
+.btn:hover {
+  background-color: #4caf50 
+}
+.btn:active{
+  background-color: #1b5e20 ;
+  
+}

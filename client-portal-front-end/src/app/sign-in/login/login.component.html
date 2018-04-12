@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="wrapper">
+    <div class="outer-container">
+      <a href="#/landing">
+        <img class="igp-logo"  src="../../assets/images/IGP-Logo.png"/>
+      </a>
+      <div class="login-form">
+        <img class="form-logo" src="../../assets/images/IGP-Logo-Black.png" />
+        <p class="form-heading">Portal Login</p>
+        <p class="form-heading-light">Customer Portal Platform</p>
+        <div class="form-wrapper">
+          <form >
+            <div class="user-input input-field inline">
+              <input type="email" name = "email" class="validate" id="icon_prefix" [ngModelOptions]="{standalone: true}" placeholder="Please enter your email"
+                [(ngModel)]="username" required email="true" #email="ngModel">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span class="helper-text" data-error="please enter valid email"></span>
+            </div>
+            <div class="user-input input-field inline">
+              <input type="password" class="validate" id="icon_telephone" [ngModelOptions]="{standalone: true}" placeholder="Password"
+                [(ngModel)]="password" name="pwd" required #pwd="ngModel">
+              <i class="fa fa-lock" aria-hidden="true"></i>
+              <span class="helper-text" data-error="please enter password"></span>
+            </div>
+          </form>
+          <div class="error-msg-parent" *ngIf="isError">
+            <p class="error-msg">Login failed!!! Please try again.</p>
+          </div>
+        </div>
+        <button class="waves-effect waves-light btn signin-button" [disabled]="!(email.valid && pwd.valid)" (click)="login()">Log In</button>
+
+      </div>
+      <div class="push"></div>
+    </div>
+  </div>
+</div>

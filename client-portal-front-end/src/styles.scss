@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }

@@ -1,0 +1,28 @@
+.table-parent{ 
+
+    padding: 0.5%;
+}
+.icon-style{
+    width: 12%;
+    background-color: lightgreen !important;
+    mix-blend-mode: multiply;
+    padding: 0;
+}
+.credit-icon{
+    width: 12%;
+    padding: 0;
+    background-color: red !important;
+    mix-blend-mode: multiply;
+    margin: 0;
+}
+.a-style{
+padding: 0;
+margin: 0;
+}
+th{
+    width: 4%;
+    text-align: center;
+}
+td{
+    text-align: center
+}
